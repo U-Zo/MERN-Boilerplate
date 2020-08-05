@@ -1,10 +1,13 @@
 import React, {useState, useEffect} from 'react'
+import LoginPage from "./components/pages/LoginPage";
 
 const App = () => {
     const [user, setUser] = useState();
 
     useEffect(() => {
-        callApi().then(res => setUser(res));
+        callApi()
+            .then(res => setUser(res))
+            .catch(err => console.log(err));
     }, [setUser]);
 
     const callApi = async () => {
@@ -15,11 +18,7 @@ const App = () => {
 
     return (
         <>
-            <div>
-                {user ? user.map(res => {
-                    return res.name + res.age;
-                }) : ''}
-            </div>
+            <LoginPage/>
         </>
     );
 }
