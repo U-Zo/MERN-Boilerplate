@@ -11,7 +11,7 @@ app.get('/api/test', (req, res) => {
     res.send([
         {
             'name': 'woojo',
-            'age': '27'
+            'phone': '01012345678'
         }
     ]);
 });
