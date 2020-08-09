@@ -1,12 +1,14 @@
 import React from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
+import Button from '../common/Button';
 
 const AuthFormBlock = styled.div`
   h3 {
-    color: #636363;
-    font-size: 2rem;
+    color: #2b2b2b;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
   }
 `;
 
@@ -19,7 +21,6 @@ const StyledInput = styled.input`
   transition: all ease-in 0.2s;
   border-bottom: 1px solid #e5e5e5;
   &:focus {
-    // color: $oc-teal-7;
     border-bottom: 1px solid #828282;
   }
   & + & {
@@ -27,22 +28,29 @@ const StyledInput = styled.input`
   }
 `;
 
+const ButtonWithMargin = styled(Button)`
+  margin-top: 1rem;
+`;
+
 const AuthForm = () => {
     return (
         <AuthFormBlock>
-            <h3>Login</h3>
+            <h3>로그인</h3>
             <form>
                 <StyledInput
                     autoComplete="username"
                     name="username"
-                    placeholder="Username"
+                    placeholder="아이디"
                 />
                 <StyledInput
                     autoComplete="new-password"
                     name="password"
-                    placeholder="Password"
+                    placeholder="비밀번호"
                     type="password"
                 />
+                <ButtonWithMargin fullWidth>
+                    로그인
+                </ButtonWithMargin>
             </form>
         </AuthFormBlock>
     );
