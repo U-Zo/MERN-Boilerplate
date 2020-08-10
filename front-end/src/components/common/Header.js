@@ -32,15 +32,22 @@ const HeaderWrapper = styled(Responsive)`
   }
 `;
 
+const SpaceBlock = styled.div`
+  height: 4rem;
+`;
+
 const Header = () => {
     return (
-        <HeaderBlock>
-            <HeaderWrapper>
-                <Link to="/" className="logo">
-                    Class #3
-                </Link>
-            </HeaderWrapper>
-        </HeaderBlock>
+        <>
+            <HeaderBlock>
+                <HeaderWrapper>
+                    <Link to="/" className="logo">
+                        Class #3
+                    </Link>
+                </HeaderWrapper>
+            </HeaderBlock>
+            <SpaceBlock/>
+        </>
     );
 }
 
