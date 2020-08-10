@@ -1,25 +1,13 @@
-import React, {useState, useEffect} from 'react'
-import {Route} from 'react-router-dom'
-import LoginPage from './components/pages/LoginPage';
+import React from 'react';
+import {Route} from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
+import MainPage from './pages/MainPage';
 
 const App = () => {
-    // const [user, setUser] = useState();
-    //
-    // useEffect(() => {
-    //     callApi()
-    //         .then(res => setUser(res))
-    //         .catch(err => console.log(err));
-    // }, [setUser]);
-    //
-    // const callApi = async () => {
-    //     const response = await fetch('/api/test');
-    //     const body = await response.json();
-    //     return body;
-    // }
-
     return (
         <>
             <Route component={LoginPage} path="/login/"/>
+            <Route component={MainPage} path="/" exact/>
         </>
     );
 }
