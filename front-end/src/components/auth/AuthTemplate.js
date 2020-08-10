@@ -18,7 +18,7 @@ const WhiteBlock = styled.div`
   padding: 3rem 5rem;
   border-radius: 10px;  
   width: 500px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
   
   .logo-area {
     display: block;
