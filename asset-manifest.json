@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MERN-Boilerplate/static/css/main.b526b87f.chunk.css",
-    "main.js": "/MERN-Boilerplate/static/js/main.cb04d919.chunk.js",
-    "main.js.map": "/MERN-Boilerplate/static/js/main.cb04d919.chunk.js.map",
+    "main.js": "/MERN-Boilerplate/static/js/main.77922fd3.chunk.js",
+    "main.js.map": "/MERN-Boilerplate/static/js/main.77922fd3.chunk.js.map",
     "runtime-main.js": "/MERN-Boilerplate/static/js/runtime-main.42599645.js",
     "runtime-main.js.map": "/MERN-Boilerplate/static/js/runtime-main.42599645.js.map",
     "static/js/2.473fed84.chunk.js": "/MERN-Boilerplate/static/js/2.473fed84.chunk.js",
     "static/js/2.473fed84.chunk.js.map": "/MERN-Boilerplate/static/js/2.473fed84.chunk.js.map",
     "index.html": "/MERN-Boilerplate/index.html",
-    "precache-manifest.3e349c88a52eb5e008828c80bf7e6d09.js": "/MERN-Boilerplate/precache-manifest.3e349c88a52eb5e008828c80bf7e6d09.js",
+    "precache-manifest.75f755f8709d28b17cb56b4ba39ee6d6.js": "/MERN-Boilerplate/precache-manifest.75f755f8709d28b17cb56b4ba39ee6d6.js",
     "service-worker.js": "/MERN-Boilerplate/service-worker.js",
     "static/css/main.b526b87f.chunk.css.map": "/MERN-Boilerplate/static/css/main.b526b87f.chunk.css.map",
     "static/js/2.473fed84.chunk.js.LICENSE.txt": "/MERN-Boilerplate/static/js/2.473fed84.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.42599645.js",
     "static/js/2.473fed84.chunk.js",
     "static/css/main.b526b87f.chunk.css",
-    "static/js/main.cb04d919.chunk.js"
+    "static/js/main.77922fd3.chunk.js"
   ]
 }

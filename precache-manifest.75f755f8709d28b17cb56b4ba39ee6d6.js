@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a56a4d2dcf64fb9d00de0309b1806025",
+    "revision": "98cb299707bbaedf00aa560d8b337391",
     "url": "/MERN-Boilerplate/index.html"
   },
   {
-    "revision": "4d56934f453d6ff091a3",
+    "revision": "ce71c7e707474e99b935",
     "url": "/MERN-Boilerplate/static/css/main.b526b87f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MERN-Boilerplate/static/js/2.473fed84.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4d56934f453d6ff091a3",
-    "url": "/MERN-Boilerplate/static/js/main.cb04d919.chunk.js"
+    "revision": "ce71c7e707474e99b935",
+    "url": "/MERN-Boilerplate/static/js/main.77922fd3.chunk.js"
   },
   {
     "revision": "c955d9fc9bc3da415564",
