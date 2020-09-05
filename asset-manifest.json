@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mern-boilerplate/front-end/static/css/main.b526b87f.chunk.css",
+    "main.js": "/mern-boilerplate/front-end/static/js/main.f31ee827.chunk.js",
+    "main.js.map": "/mern-boilerplate/front-end/static/js/main.f31ee827.chunk.js.map",
+    "runtime-main.js": "/mern-boilerplate/front-end/static/js/runtime-main.8267b8d2.js",
+    "runtime-main.js.map": "/mern-boilerplate/front-end/static/js/runtime-main.8267b8d2.js.map",
+    "static/js/2.29925a8a.chunk.js": "/mern-boilerplate/front-end/static/js/2.29925a8a.chunk.js",
+    "static/js/2.29925a8a.chunk.js.map": "/mern-boilerplate/front-end/static/js/2.29925a8a.chunk.js.map",
+    "index.html": "/mern-boilerplate/front-end/index.html",
+    "precache-manifest.f31c0b18c15e38655dae84aaea50682c.js": "/mern-boilerplate/front-end/precache-manifest.f31c0b18c15e38655dae84aaea50682c.js",
+    "service-worker.js": "/mern-boilerplate/front-end/service-worker.js",
+    "static/css/main.b526b87f.chunk.css.map": "/mern-boilerplate/front-end/static/css/main.b526b87f.chunk.css.map",
+    "static/js/2.29925a8a.chunk.js.LICENSE.txt": "/mern-boilerplate/front-end/static/js/2.29925a8a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8267b8d2.js",
+    "static/js/2.29925a8a.chunk.js",
+    "static/css/main.b526b87f.chunk.css",
+    "static/js/main.f31ee827.chunk.js"
+  ]
+}
