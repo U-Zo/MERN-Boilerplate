@@ -29,7 +29,8 @@ UserSchema.methods.serialize = function() {
 };
 
 UserSchema.methods.generateToken = function() {
-  const token = jwt.sign( // sign: 토큰을 발급하는 함수
+  const token = jwt.sign(
+      // sign: 토큰을 발급하는 함수
       // 첫 번째 파라미터에는 토큰 안에 넣을 데이터를 넣음
       {
         _id: this.id,

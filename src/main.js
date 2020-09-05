@@ -11,14 +11,14 @@ const { PORT, MONGO_URI } = process.env; // .env 내부 값 비구조화 할당
 
 // MongoDB 접속
 mongoose
-    .connect(MONGO_URI, {
-      useNewUrlParser: true,
-      useFindAndModify: false,
-      useUnifiedTopology: true,
-    })
-    .catch(e => {
-      console.log(e);
-    });
+  .connect(MONGO_URI, {
+    useNewUrlParser: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true,
+  })
+  .catch((e) => {
+    console.log(e);
+  });
 
 const app = express(); // app은 express 프레임워크 수행
 

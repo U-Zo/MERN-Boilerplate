@@ -1,14 +1,10 @@
 import Joi from 'joi';
 import User from '../../models/user';
 
-export const register = async (req, res) => {
+export const register = async (req, res, next) => {
   // Request Body 검증
   const schema = Joi.object().keys({
-    username: Joi.string()
-        .alphanum()
-        .min(3)
-        .max(20)
-        .required(),
+    username: Joi.string().alphanum().min(3).max(20).required(),
     password: Joi.string().required(),
   });
 
@@ -44,14 +40,13 @@ export const register = async (req, res) => {
           maxAge: 1000 * 60 * 60 * 24 * 7, // 7일
           httpOnly: true,
         })
-        .json(user.serialize())
-    ;
+        .json(user.serialize());
   } catch (e) {
-    throw e;
+    next(e);
   }
 };
 
-export const login = async (req, res) => {
+export const login = async (req, res, next) => {
   const { username, password } = req.body;
 
   // username, password 가 없으면 에러
@@ -87,13 +82,14 @@ export const login = async (req, res) => {
         .json(user.serialize());
   } catch (e) {
     res.status(500).send();
-    throw e;
+    next(e);
   }
 };
 
 export const check = async (req, res) => {
   const { user } = res.locals;
-  if (!user) { // 로그인 중이 아님
+  if (!user) {
+    // 로그인 중이 아님
     res.status(401).send();
     return;
   }
