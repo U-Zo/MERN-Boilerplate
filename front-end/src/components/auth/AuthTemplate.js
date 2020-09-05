@@ -30,17 +30,17 @@ const WhiteBlock = styled.div`
   }
 `;
 
-const AuthTemplate = ({children}) => {
-    return (
-        <AuthTemplateBlock>
-            <WhiteBlock>
-                <div className="logo-area">
-                    CLASS #3
-                </div>
-                {children}
-            </WhiteBlock>
-        </AuthTemplateBlock>
-    );
+const AuthTemplate = ({ children }) => {
+  return (
+      <AuthTemplateBlock>
+        <WhiteBlock>
+          <div className="logo-area">
+            CLASS #3
+          </div>
+          {children}
+        </WhiteBlock>
+      </AuthTemplateBlock>
+  );
 };
 
 export default AuthTemplate;

@@ -33,27 +33,27 @@ const ButtonWithMargin = styled(Button)`
 `;
 
 const AuthForm = () => {
-    return (
-        <AuthFormBlock>
-            <h3>로그인</h3>
-            <form>
-                <StyledInput
-                    autoComplete="username"
-                    name="username"
-                    placeholder="아이디"
-                />
-                <StyledInput
-                    autoComplete="new-password"
-                    name="password"
-                    placeholder="비밀번호"
-                    type="password"
-                />
-                <ButtonWithMargin fullWidth>
-                    로그인
-                </ButtonWithMargin>
-            </form>
-        </AuthFormBlock>
-    );
+  return (
+      <AuthFormBlock>
+        <h3>로그인</h3>
+        <form>
+          <StyledInput
+              autoComplete="username"
+              name="username"
+              placeholder="아이디"
+          />
+          <StyledInput
+              autoComplete="new-password"
+              name="password"
+              placeholder="비밀번호"
+              type="password"
+          />
+          <ButtonWithMargin fullWidth>
+            로그인
+          </ButtonWithMargin>
+        </form>
+      </AuthFormBlock>
+  );
 };
 
 export default AuthForm;

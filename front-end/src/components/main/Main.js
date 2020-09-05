@@ -15,34 +15,40 @@ const Board = styled(WhiteBoard)`
 `;
 
 const Main = () => {
-    return (
-        <MainBlock>
-            <Board title="Lorem ipsum">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam
-            </Board>
-            <Board title="Lorem ipsum">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam
-            </Board>
-            <Board title="Lorem ipsum">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam
-            </Board>
-            <Board title="Lorem ipsum">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam
-            </Board>
-            <Board title="Lorem ipsum">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam
-            </Board>
-            <Board title="Lorem ipsum">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam
-            </Board>
-        </MainBlock>
-    );
+  return (
+      <MainBlock>
+        <Board title="Lorem ipsum">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam
+        </Board>
+        <Board title="Lorem ipsum">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam
+        </Board>
+        <Board title="Lorem ipsum">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam
+        </Board>
+        <Board title="Lorem ipsum">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam
+        </Board>
+        <Board title="Lorem ipsum">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam
+        </Board>
+        <Board title="Lorem ipsum">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam
+        </Board>
+      </MainBlock>
+  );
 };
 
 export default Main;

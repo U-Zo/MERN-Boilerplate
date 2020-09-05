@@ -18,9 +18,9 @@ const ResponsiveBlock = styled.div`
   }
 `;
 
-const Responsive = ({children, ...props}) => {
-    // style, className 등 props 전달하기 위해 ...props를 이용
-    return <ResponsiveBlock {...props}>{children}</ResponsiveBlock>
-}
+const Responsive = ({ children, ...props }) => {
+  // style, className 등 props 전달하기 위해 ...props를 이용
+  return <ResponsiveBlock {...props}>{children}</ResponsiveBlock>;
+};
 
 export default Responsive;

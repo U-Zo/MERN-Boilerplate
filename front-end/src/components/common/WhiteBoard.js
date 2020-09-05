@@ -22,17 +22,17 @@ const WhiteBoardBlock = styled.div`
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15);
 `;
 
-const WhiteBoard = ({title, children, ...props}) => {
-    return (
-        <div {...props}>
-            <WhiteBoardTop>
-                {title}
-            </WhiteBoardTop>
-            <WhiteBoardBlock>
-                {children}
-            </WhiteBoardBlock>
-        </div>
-    );
+const WhiteBoard = ({ title, children, ...props }) => {
+  return (
+      <div {...props}>
+        <WhiteBoardTop>
+          {title}
+        </WhiteBoardTop>
+        <WhiteBoardBlock>
+          {children}
+        </WhiteBoardBlock>
+      </div>
+  );
 };
 
 export default WhiteBoard;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Responsive from './Responsive';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const HeaderBlock = styled.div`
   width: 100%;
@@ -37,18 +37,18 @@ const SpaceBlock = styled.div`
 `;
 
 const Header = () => {
-    return (
-        <>
-            <HeaderBlock>
-                <HeaderWrapper>
-                    <Link to="/" className="logo">
-                        Class #3
-                    </Link>
-                </HeaderWrapper>
-            </HeaderBlock>
-            <SpaceBlock/>
-        </>
-    );
-}
+  return (
+      <>
+        <HeaderBlock>
+          <HeaderWrapper>
+            <Link to="/" className="logo">
+              Class #3
+            </Link>
+          </HeaderWrapper>
+        </HeaderBlock>
+        <SpaceBlock />
+      </>
+  );
+};
 
 export default Header;

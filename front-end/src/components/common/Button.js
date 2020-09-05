@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const StyledButton = styled.button`
   border: none;
@@ -25,7 +25,7 @@ const StyledButton = styled.button`
 `;
 
 const Button = (props) => {
-    return <StyledButton {...props}/>
-}
+  return <StyledButton {...props} />;
+};
 
 export default Button;
