@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const AuthTemplateBlock = styled.div`
   position: absolute;
@@ -35,7 +36,7 @@ const AuthTemplate = ({ children }) => {
       <AuthTemplateBlock>
         <WhiteBlock>
           <div className="logo-area">
-            CLASS #3
+            <Link to="/">MERN</Link>
           </div>
           {children}
         </WhiteBlock>

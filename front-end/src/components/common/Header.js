@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Responsive from './Responsive';
 import { Link } from 'react-router-dom';
+import Button from './Button';
 
 const HeaderBlock = styled.div`
   width: 100%;
@@ -30,20 +31,39 @@ const HeaderWrapper = styled(Responsive)`
     height: 100%;
     align-items: center;
   }
+  
+  .right {
+    display: flex;
+    align-items: center;
+  }
 `;
 
 const SpaceBlock = styled.div`
   height: 4rem;
 `;
 
-const Header = () => {
+const UserInfo = styled.div`
+  font-weight: bold;
+`;
+
+const Header = ({ user, onLogout }) => {
   return (
       <>
         <HeaderBlock>
           <HeaderWrapper>
             <Link to="/" className="logo">
-              Class #3
+              MERN
             </Link>
+            {user ? (
+                <div className="right">
+                  <UserInfo>{user.username}</UserInfo>
+                  <Button onClick={onLogout}>로그아웃</Button>
+                </div>
+            ) : (
+                <div className="right">
+                  <Button to="/login">로그인</Button>
+                </div>
+            )}
           </HeaderWrapper>
         </HeaderBlock>
         <SpaceBlock />

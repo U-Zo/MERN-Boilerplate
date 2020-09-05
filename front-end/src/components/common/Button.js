@@ -1,7 +1,8 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { Link } from 'react-router-dom';
 
-const StyledButton = styled.button`
+const buttonStyle = css`
   border: none;
   border-radius: 4px;
   font-weight: bold;
@@ -12,6 +13,7 @@ const StyledButton = styled.button`
   font-size: 1rem;
   background-color: #3D79F2;
   transition: background-color .3s ease;
+  font-family: inherit;
   
   &:hover {
     background-color: #5e8de9;
@@ -24,8 +26,20 @@ const StyledButton = styled.button`
     `}
 `;
 
-const Button = (props) => {
-  return <StyledButton {...props} />;
+const StyledButton = styled.button`
+  ${buttonStyle}
+`;
+
+const StyledLink = styled(Link)`
+  ${buttonStyle}
+`;
+
+const Button = props => {
+  return props.to ? (
+      <StyledLink {...props} />
+  ) : (
+      <StyledButton {...props} />
+  );
 };
 
 export default Button;
