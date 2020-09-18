@@ -36,13 +36,13 @@ export const register = async (req, res, next) => {
 
     const token = user.generateToken(); // 토큰 생성
     res
-        .cookie('access_token', token, {
-          maxAge: 1000 * 60 * 60 * 24 * 7, // 7일
-          httpOnly: true,
-        })
-        .json(user.serialize());
+      .cookie('access_token', token, {
+        maxAge: 1000 * 60 * 60 * 24 * 7, // 7일
+        httpOnly: true,
+      })
+      .json(user.serialize());
   } catch (e) {
-    next(e);
+    return next(e);
   }
 };
 
@@ -75,14 +75,14 @@ export const login = async (req, res, next) => {
     const token = user.generateToken(); // 토큰 생성
 
     res
-        .cookie('access_token', token, {
-          maxAge: 1000 * 60 * 60 * 24 * 7, // 7일
-          httpOnly: true,
-        })
-        .json(user.serialize());
+      .cookie('access_token', token, {
+        maxAge: 1000 * 60 * 60 * 24 * 7, // 7일
+        httpOnly: true,
+      })
+      .json(user.serialize());
   } catch (e) {
     res.status(500).send();
-    next(e);
+    return next(e);
   }
 };
 
